@@ -1,0 +1,27 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "EosTxProtoc";
+
+message EosTx {
+    message Data {
+        string from = 1;
+        string to = 2;
+        int64 amount = 3;
+        string symbol = 4; // optional, default "EOS"
+        string memo = 5;
+        int64 fee = 6;
+        int32 decimal = 7;
+    }
+
+    message Header {
+        int64 time = 1;
+        int32 expireInSeconds = 2;
+        int64 refBlockNum = 3;
+        int64 refBlockPrefix = 4;
+    }
+    string type = 1; // optional default 'transfer'
+    string tokenAccount = 2; //optional default, required for token
+    Data data = 3;
+    Header header = 4;
+}

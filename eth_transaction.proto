@@ -1,0 +1,20 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "EthTxProtoc";
+
+message EthTx {
+    message Override {
+        int32 decimals = 1;
+        string tokenShortName = 2;
+        string tokenFullName = 3;
+        string contractAddress = 4;
+    }
+    string to = 1;
+    string value = 2;
+    string gasPrice = 3;
+    string gasLimit = 4;
+    string memo = 5; // optional
+    int32 nonce = 6;
+    Override override = 7; //optional, required by erc20 token
+}

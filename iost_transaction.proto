@@ -1,0 +1,21 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "IostTxProtoc";
+
+message IostTx {
+    message Config {
+        int64 gasRatio = 1;
+        int64 gasLimit = 2;
+        int32 delay = 3;
+        string defaultLimit = 4;
+    }
+    string tokenName = 1; // required for token
+    string from = 2;
+    string to = 3;
+    string memo = 4;
+    string amount = 5;
+    int64 timestamp = 6;
+    int32 expiration = 7; // optional default 300s
+    Config config = 8; // optional
+}

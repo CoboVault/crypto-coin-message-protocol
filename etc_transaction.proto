@@ -1,0 +1,13 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "EtcTxProtoc";
+
+message EtcTx {
+    string to = 1;
+    string value = 2;
+    string gasPrice = 3;
+    string gasLimit = 4;
+    string memo = 5;
+    int32 nonce = 6;
+}

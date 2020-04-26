@@ -1,0 +1,17 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "StakingProtoc";
+
+message DashStaking {
+    string coinCode = 1;
+    string hdPath = 2;
+    string mnid = 3;
+    string address = 4;
+    string message = 5;
+}
+message Staking {
+    oneof data {
+        DashStaking dash = 1;
+    }
+}

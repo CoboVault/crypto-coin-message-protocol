@@ -1,0 +1,14 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "XrpTxProtoc";
+
+message XrpTx {
+    string to = 1;
+    int64 amount = 2;
+    string changeAddress = 3;
+    int64 fee = 4;
+    int64 sequence = 5;
+    int64 tag = 6;
+    string memo = 7;
+}

@@ -1,0 +1,22 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "XzcTxProtoc";
+
+
+message XzcTx {
+    message Input {
+        string address = 1;
+        string txId = 2;
+        int32 outputIndex = 3;
+        int64 satoshis = 4;
+    }
+    int64 fee = 1;
+    string to = 2;
+    string memo = 3;
+    int64 amount = 4;
+    repeated Input inputs = 5;
+    string changeAddress = 6;
+}
+
+
