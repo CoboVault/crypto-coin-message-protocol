@@ -9,7 +9,7 @@ message DashTx {
     message Input {
         string hash = 1;
         int32 index = 2;
-        int32 value = 3;
+        int64 value = 3;
         string pubkey = 4;
         string ownerKeyPath = 5;
     }
