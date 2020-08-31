@@ -1,0 +1,22 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "KsmTxProtoc";
+
+
+message KsmTx {
+    int64 value = 1;
+    string dest = 2;
+    string blockHash = 3;
+    int64 eraPeriod = 4; // optional
+    string genesisHash = 5;
+    int64 nonce = 6;
+    int64 tip = 7;// optional
+    int64 transactionVersion = 8;
+    int64 specVersion = 9;
+    int64 validityPeriod = 10;// optional
+    int64 implVersion = 11;
+    int64 authoringVersion = 12;
+}
+
+
