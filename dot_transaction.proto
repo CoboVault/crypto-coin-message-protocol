@@ -17,6 +17,7 @@ message DotTx {
     int64 validityPeriod = 10;// optional
     int64 implVersion = 11;
     int64 authoringVersion = 12;
+    int32 blockNumber = 13;
 }
 
 
