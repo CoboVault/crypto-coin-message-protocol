@@ -8,15 +8,14 @@ message DotTx {
     int64 value = 1;
     string dest = 2;
     string blockHash = 3;
-    int64 eraPeriod = 4; // optional
-    int64 nonce = 5;
-    int64 tip = 6;// optional
-    int64 transactionVersion = 7;
-    int64 specVersion = 8;
-    int64 validityPeriod = 9;// optional
-    int64 implVersion = 10;
-    int64 authoringVersion = 11;
-    int32 blockNumber = 12;
+    int64 nonce = 4;
+    int64 tip = 5;// optional
+    int64 transactionVersion = 6;
+    int64 specVersion = 7;
+    int64 validityPeriod = 8;// optional
+    int64 implVersion = 9;
+    int64 authoringVersion = 10;
+    int32 blockNumber = 11;
 }
 
 
