@@ -1,0 +1,16 @@
+syntax = "proto3";
+package protoc;
+option java_package = "com.cobo.cold.protobuf";
+option java_outer_classname = "CfxTxProtoc";
+
+message CfxTx {
+  string to = 1;
+  string value = 2;
+  string gasPrice = 3;
+  string gas = 4;
+  int32 nonce = 5;
+  string storageLimit = 6;
+  string epochHeight = 7;
+  string chainId = 8; //optional
+  string contractAddress = 9;  //optional
+}
