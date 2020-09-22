@@ -4,6 +4,12 @@ option java_package = "com.cobo.cold.protobuf";
 option java_outer_classname = "CfxTxProtoc";
 
 message CfxTx {
+  message Override {
+    int32 decimals = 1;
+    string tokenShortName = 2;
+    string tokenFullName = 3;
+    string contractAddress = 4;
+  }
   string to = 1;
   string value = 2;
   string gasPrice = 3;
@@ -13,4 +19,5 @@ message CfxTx {
   string epochHeight = 7;
   string chainId = 8; //optional
   string contractAddress = 9;  //optional
+  Override override = 10;
 }
