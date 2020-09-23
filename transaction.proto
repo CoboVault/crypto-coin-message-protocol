@@ -18,7 +18,7 @@ import "omni_transaction.proto";
 import "eos_transaction.proto";
 import "dot_transaction.proto";
 import "ksm_transaction.proto";
-import "cfx_transaction.proto";
+import "tcfx_transaction.proto";
 
 message SignTransaction {
     string coinCode = 1;
@@ -42,6 +42,6 @@ message SignTransaction {
         EosTx eosTx = 18;
         DotTx dotTx = 19;
         KsmTx ksmTx = 20;
-        CfxTx cfxTx = 21;
+        TcfxTx tcfxTx = 21;
     }
 }

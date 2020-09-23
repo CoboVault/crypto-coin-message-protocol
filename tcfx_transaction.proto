@@ -1,9 +1,9 @@
 syntax = "proto3";
 package protoc;
 option java_package = "com.cobo.cold.protobuf";
-option java_outer_classname = "CfxTxProtoc";
+option java_outer_classname = "TcfxTxProtoc";
 
-message CfxTx {
+message TcfxTx {
   message Override {
     int32 decimals = 1;
     string tokenShortName = 2;
