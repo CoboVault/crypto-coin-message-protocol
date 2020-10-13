@@ -19,7 +19,7 @@ message TronTx {
     string from = 3;
     string to = 4;
     string memo = 5;
-    string value = 6;
+    int64 value = 6;
     LatestBlock latestBlock = 7;
     Override override = 8; //for display token info
     int32 fee = 9;
